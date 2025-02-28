@@ -45,10 +45,11 @@ function sendEmail(email, subject, message) {
 })
 }
 
-app.post('/', (req, res) => {
-    res.send('Hello World')
-})
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the email sender API')
+}
+)
 app.post('/send-email', async (req, res) => {
     try {
         const { email, subject, message } = req.body
