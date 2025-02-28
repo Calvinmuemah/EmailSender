@@ -10,7 +10,7 @@ function App() {
 
 
   const sendMail = async() => {
-    await axios.post("http://localhost:3000/send-email", {
+    await axios.post("https://email-sender-x4l8.vercel.app/send-email", {
       email,
       subject,
       message
