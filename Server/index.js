@@ -45,11 +45,9 @@ function sendEmail(email, subject, message) {
 })
 }
 
-// app.post('/', (req, res) => {
-//     sendEmail(req.body.email, req.body.subject, req.body.message)
-//     .then((res) => res.send({message: 'Email sent successfully'}))
-//     .catch((err) => res.status(500).send({message: 'Error sending email'}))
-// })
+app.post('/', (req, res) => {
+    res.send('Hello World')
+})
 
 app.post('/send-email', async (req, res) => {
     try {
