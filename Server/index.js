@@ -88,7 +88,7 @@ app.get('/', (req, res) => {
 });
 
 // API to send an email
-app.post('/send', async (req, res) => {
+app.post('/send-email', async (req, res) => {
     try {
         const { email, subject, name } = req.body;
         if (!email || !subject || !name) {
