@@ -76,7 +76,7 @@ function App() {
     setLoading(true);
 
     try {
-      await axios.post("email-sender-x4l8-col3d647m-calvin-muemahs-projects.vercel.app/send-email", {
+      await axios.post("https://email-sender-x4l8.vercel.app/send-email", {
         email,
         subject,
         name,  // Send the name to personalize email
