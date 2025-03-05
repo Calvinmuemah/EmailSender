@@ -83,12 +83,12 @@ async function sendEmail(email, subject, name) {
 }
 
 // Home route
-// app.get('/', (req, res) => {
-//     res.send('Welcome to the Email Sender API');
-// });
+app.get('/', (req, res) => {
+    res.send('Welcome to the Email Sender API');
+});
 
 // API to send an email
-app.post('/', async (req, res) => {
+app.post('/send', async (req, res) => {
     try {
         const { email, subject, name } = req.body;
         if (!email || !subject || !name) {
